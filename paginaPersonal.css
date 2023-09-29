@@ -1,7 +1,7 @@
 #main {
     margin: auto;
-    height: 800px;
-    width: 1500px;
+    height: 200px;
+    width: 80%px;
     background-color: rgb(228, 171, 0);
     position: relative;
     overflow: hidden;
@@ -12,14 +12,14 @@
     position: absolute;
     top: 50%;
     left: 0;
-    border-top: 5px solid black;
+    border-top: 5px solid white;
     background: black;
     width: 100%;
     transform: translateY(-50%);
 }
 #main div {
-    width: 800px;
-    height: 800px;
+    width: 50%;
+    height: 100%;
     border-radius: 100%;
     background-color: #FFF;
     position: relative;
