@@ -1,8 +1,19 @@
 @charset "UTF-8";
-@import "/pagPersonal/scss/partials/_centro.scss";
+#centro {
+  margin: auto;
+  height: 33vw;
+  width: 33vw;
+  border-radius: 100%;
+  background-color: blue;
+  position: relative;
+  justify-content: space-between;
+  background-image: url("./imagen.jpg");
+  background-size: cover;
+}
 
-body {
-  background-color: rgb(255, 213, 0);
+#centro span {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 header {
@@ -22,6 +33,10 @@ header {
   background-color: blue;
   padding: 10px 20px;
   margin: 0px auto; /* Añade espacio entre los elementos */
+}
+
+body {
+  background-color: rgb(255, 213, 0);
 }
 
 .main:before {
