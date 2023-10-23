@@ -1,15 +1,41 @@
+$colores-claros : (
+    #ffce00,
+    #ff8d00,
+    #ffffff
+);
+
+$colores-oscuros : (
+    #380356,
+    #6b0078,
+    #93009c
+);
+
+$tamanios-iconos-horizontal : (
+ 'pequenio':40px, 
+ 'medio':60px,
+ 'grande':100px
+);
+
+$tamanios-iconos-vertical : (
+ 'pequenio':40px, 
+ 'medio':60px,
+ 'grande':100px
+);
+
+@import "partials/_boton.scss";
 @import "partials/_centro.scss";
 @import "partials/_top.scss";
 @import "partials/_main.scss";
-body{
-    background-color: rgb(255, 213, 0);
-}
 
+
+body{
+    background-color: var(--color-3);
+}
 
 .cajabot{
 margin-top: 30px;
 background-color: red;
-width: 100%;
+//width: 100%;
 bottom: 0px;
 display: flex;
 padding: 20px;
@@ -24,3 +50,17 @@ justify-content: center; /* Centra horizontalmente los elementos */
     flex: 50%;
 
 }
+
+
+:root {
+    .tema-claro{
+    --color-1: #{nth($colores-claros,1)};
+    --color-2: #{nth($colores-claros,1)};
+    --color-3: #{nth($colores-claros,1)};
+    }
+    .tema-oscuro{
+      --color-1:  #{nth($colores-oscuros,1)};
+      --color-2:  #{nth($colores-oscuros,2)};
+      --color-3:  #{nth($colores-oscuros,3)};
+    }
+  } 

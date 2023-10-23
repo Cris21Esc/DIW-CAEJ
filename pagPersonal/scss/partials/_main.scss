@@ -1,11 +1,10 @@
-
 .main:before {
     content: '';
     position: absolute;
     top: 50%;
     left: 0;
     border-top: 5px solid white;
-    background: black;
+    background: none;
     width: 100%;
     transform: translateY(-50%);
     z-index: -1;
@@ -16,7 +15,7 @@
     height: 100%;
     position: relative;
     right: 100%;
-    background-color:rgb(228, 171, 0);
+    background-color: var(--color-2);
     margin: 0 auto;
     display: flex;
     z-index: -2;
