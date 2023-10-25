@@ -1,0 +1,16 @@
+.cajabot{
+    top: 30px;
+    background-color: var(--color-2);
+    //width: 100%;
+    bottom: 0px;
+    display: flex;
+    padding: 20px;
+    justify-content: center; /* Centra horizontalmente los elementos */
+    border-radius: 10px;
+}
+.cajabot> div{
+    background-color: var(--color-1);
+    padding: 10px 20px;
+    margin: 0px auto;
+    border-radius: 10px;
+}

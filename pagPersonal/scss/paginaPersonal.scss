@@ -1,13 +1,15 @@
 $colores-claros : (
     #ffce00,
     #ff8d00,
-    #ffffff
+    #9b3c00,
+    #333333
 );
 
 $colores-oscuros : (
+    #6b0078,    
     #380356,
-    #6b0078,
-    #93009c
+    #93009c,
+    #ffffff
 );
 
 $tamanios-iconos-horizontal : (
@@ -26,41 +28,25 @@ $tamanios-iconos-vertical : (
 @import "partials/_centro.scss";
 @import "partials/_top.scss";
 @import "partials/_main.scss";
+@import "partials/_bottom.scss";
 
 
 body{
-    background-color: var(--color-3);
+    background-color: var(--color-1);
+    color: var(--color-4);
 }
-
-.cajabot{
-margin-top: 30px;
-background-color: red;
-//width: 100%;
-bottom: 0px;
-display: flex;
-padding: 20px;
-justify-content: center; /* Centra horizontalmente los elementos */
-}
-.cajabot> div{
-    background-color: white;
-    padding: 10px 20px;
-    margin: 0px auto;
-}
-.idDer{
-    flex: 50%;
-
-}
-
 
 :root {
     .tema-claro{
     --color-1: #{nth($colores-claros,1)};
-    --color-2: #{nth($colores-claros,1)};
-    --color-3: #{nth($colores-claros,1)};
+    --color-2: #{nth($colores-claros,2)};
+    --color-3: #{nth($colores-claros,3)};
+    --color-4: #{nth($colores-claros,4)};
     }
     .tema-oscuro{
       --color-1:  #{nth($colores-oscuros,1)};
       --color-2:  #{nth($colores-oscuros,2)};
       --color-3:  #{nth($colores-oscuros,3)};
+      --color-4: #{nth($colores-oscuros,4)};
     }
   } 
