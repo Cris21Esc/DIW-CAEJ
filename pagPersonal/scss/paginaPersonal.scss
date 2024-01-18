@@ -1,14 +1,16 @@
 $colores-claros : (
-    #ffce00,
-    #ff8d00,
-    #9b3c00,
+    #ffd200,
+    #ffb400,
+    #ff9500,
+    #ff6800,
     #333333
 );
 
 $colores-oscuros : (
-    #6b0078,    
-    #380356,
-    #93009c,
+    #0000ff,
+    #00a1ff,        
+    #0051ff,
+    #5300ff,
     #ffffff
 );
 
@@ -24,16 +26,24 @@ $tamanios-iconos-vertical : (
  'grande':100px
 );
 
+$debug: true;
+
+@import "partials/_debug.scss";
 @import "partials/_boton.scss";
 @import "partials/_centro.scss";
 @import "partials/_top.scss";
 @import "partials/_main.scss";
 @import "partials/_bottom.scss";
+@import "partials/lats.scss";
 
 
 body{
     background-color: var(--color-1);
-    color: var(--color-4);
+    color: var(--color-5);
+    font-size: 16px;
+    padding: 1rem;
+    background-color: var(--color-1);
+    margin: 0 auto;
 }
 
 :root {
@@ -42,11 +52,13 @@ body{
     --color-2: #{nth($colores-claros,2)};
     --color-3: #{nth($colores-claros,3)};
     --color-4: #{nth($colores-claros,4)};
+    --color-5: #{nth($colores-claros,5)};
     }
     .tema-oscuro{
       --color-1:  #{nth($colores-oscuros,1)};
       --color-2:  #{nth($colores-oscuros,2)};
       --color-3:  #{nth($colores-oscuros,3)};
       --color-4: #{nth($colores-oscuros,4)};
+      --color-5: #{nth($colores-oscuros,5)};
     }
   } 

@@ -20,8 +20,8 @@ input {
     bottom: 0; 
     transition: 0.4s;
     border-radius: 25px;
-    background-color: var(--color-4);
-    border: 1px solid #eaeaea;
+    background-color: var(--color-5);
+    border: 1px solid var(--color-3);
 }
 
 .slider-5:before {
@@ -42,6 +42,6 @@ input:checked+.slider-5:before {
 }
 
 input:checked+.slider-5 {
-    background-color: #4e4e4e;
+    background-color: var(--color-5);
     left: 0px;
 }

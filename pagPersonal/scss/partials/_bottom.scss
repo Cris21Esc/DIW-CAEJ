@@ -1,16 +1,26 @@
-.cajabot{
-    top: 30px;
-    background-color: var(--color-2);
-    //width: 100%;
-    bottom: 0px;
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    background-color: var(--color-3);
+    border-radius: 10px;
+}
+
+    $redes-sociales: correo facebook instagram linkedin twitter;
+
+.redes-sociales {
     display: flex;
-    padding: 20px;
-    justify-content: center; /* Centra horizontalmente los elementos */
-    border-radius: 10px;
+    justify-content: space-around;
+    @each $red in $redes-sociales {
+        .icono-#{$red} { 
+            background-image: url("../scss/imgs/#{$red}.png");
+            width: map-get($tamanios-iconos-horizontal , 'medio' );
+            height: map-get($tamanios-iconos-vertical , 'medio' );
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            display: inline-block;
+                
+        }
+    }
 }
-.cajabot> div{
-    background-color: var(--color-1);
-    padding: 10px 20px;
-    margin: 0px auto;
-    border-radius: 10px;
-}
+

@@ -1,0 +1,26 @@
+body{
+    background: black;
+}
+
+.contenedor{
+    display: flex;
+    background-color: grey;
+    min-height: 600px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    /*justify-content: start;
+    align-items: start;*/
+    padding: 50px;
+}
+
+.items{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    background-color: pink;
+    border: solid 1px black;
+    font-size: 5rem;
+    justify-content: center;
+    align-items: center;
+}

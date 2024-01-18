@@ -1,0 +1,36 @@
+header, nav, article, aside, footer {
+    border: solid red;
+    border-radius: 20px;
+}
+article, aside {
+   height: 400px;
+}
+header {
+    background-color: dimgray;
+}
+nav {
+    background-color: aqua;
+}
+.fila {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.articulo1 {
+    background-color: aliceblue;
+    flex-basis: 20%;
+    flex-grow: 2;
+}
+.articulo2 {
+    background-color: gold;    
+    flex-basis: 20%;
+    flex-grow: 2;
+}
+aside {
+    background-color: dimgrey;    
+    flex-basis: 10%;
+    flex-grow: 1;
+    order:-1;
+}
+footer {
+    background-color: blueviolet;
+}

@@ -1,0 +1,22 @@
+.debug{
+
+    text-align: center;
+    width: 50%;
+    @if $debug == false {
+    visibility: visible;
+    display: inline;
+    }
+    @else{
+    visibility: hidden;
+    }
+    }
+.imgdebug{
+    
+    @if $debug == false{
+    visibility: hidden;
+    display: none;
+    }
+    @else{
+    visibility: visible;
+    }
+}
