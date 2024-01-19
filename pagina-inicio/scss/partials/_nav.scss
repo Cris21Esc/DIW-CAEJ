@@ -9,14 +9,30 @@
 
 .nav__contenedor{
     height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: [col-start] 1fr [col-end] 2fr ;
+    grid-template-rows: [row-start] 1fr [row-mid] 1fr [row-end] 1fr;
 }
 
 .nav__enlace{
     color: #fff;
     text-decoration: none;
     margin-left: 1em;
+    padding: 0px auto;
 }
 
+.nav__logo{
+    grid-column: col-start/col-end;
+    grid-row: row-mid/row-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__enlaces{
+    grid-column: col-end;
+    grid-row: row-mid/row-end;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
