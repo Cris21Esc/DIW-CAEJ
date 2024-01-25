@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f2f2f2;
+}
+
+.tarjeta {
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 80px 0;
+  grid-template-columns: [col-start] 1fr [col-mid] 1fr [col-end] 1fr;
+  column-gap: 5vw;
+}
+
+.tarjeta__elemento {
+  background: #fff;
+  min-height: 600px;
+  overflow: hidden;
+  padding: 2em;
+  display: grid;
+  box-shadow: 0 0 32px -16px rgba(0, 0, 0, 0.5);
+  border-radius: 3%;
+  grid-template-rows: [te-row-start] 1fr [te-row-mid] 1fr [te-row-end] 1fr;
+}
+
+.tarjeta__figure {
+  grid-row: te-row-start/te-row-mid;
+  display: grid;
+  height: 50%;
+  grid-template-rows: [tf-row-start] 1fr [tf-row-mid] 1fr [tf-row-end] 1fr;
+}
+
+.tarjeta__img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  grid-row: tf-row-end;
+}
+
+.tarjeta__parrafo {
+  padding: 0.5em 0;
+  text-align: center;
+}
+
+.btn-continuar {
+  display: inline-block;
+  background: #1E8449;
+  padding: 15px 30px;
+  margin-top: 1em;
+  text-decoration: none;
+  color: #fff;
+  margin-top: auto;
+  grid-row: te-row-end;
+}
+
+.tarjeta__texto h2 {
+  text-align: center;
+  color: #1E8449;
+}
+
+.tarjeta__texto {
+  grid-row: te-row-mid/te-row-end;
+}
+
+/*# sourceMappingURL=estilos.css.map */
