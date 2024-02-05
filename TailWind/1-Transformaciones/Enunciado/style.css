@@ -3,6 +3,7 @@
 }
 
 .container {
+  padding: 50px;
   display: flex;
   justify-content: space-around;
   margin: 50px auto;
@@ -14,17 +15,77 @@
   width: 15%;
 }
 
+/* ¡¡¡Solo admite un transform!!! */
+
 /* Estilos para rotar las imágenes */
 
+/* .container img:nth-child(1) {
+  transform: rotate(45deg);
+}
+.container img:nth-child(2) {
+  transform: rotate(20deg);
+}
+.container img:nth-child(3) {
+  transform: rotate(-15deg);
+}
+.container img:nth-child(4) {
+  transform: rotate(-45deg);
+} */
 
-/* Estilos para desplazar las imágenes */
+/* Estilos para escalar las imágenes */
 
+/* .container img:nth-child(1) {
+  transform: scale(2);
+}
+.container img:nth-child(2) {
+  transform: scalex(0.5);
+}
+.container img:nth-child(3) {
+  transform: scaley(1.5);
+}
+.container img:nth-child(4) {
+  transform: scale(2,1.5);
+} */
+
+/* Estilos para trasladar las imágenes */
+
+/* .container img:nth-child(1) {
+  transform: translate(3rem,5rem);
+}
+.container img:nth-child(2) {
+  transform: translate(-10px);
+}
+.container img:nth-child(3) {
+  transform: translate(50px);
+}
+.container img:nth-child(4) {
+  transform: translate(2rem,2rem);
+} */
 
 /* Estilos para el sesgado */
 
+/* .container img:nth-child(1) {
+  transform: skew(10deg);  
+}
+.container img:nth-child(2) {
+  transform: skewX(-20deg);  
+}
+.container img:nth-child(3) {
+  transform: skewY(30deg);  
+}
+.container img:nth-child(4) {
+  transform: skew(20deg,-15deg);  
+}*/
 
 /* Trasformaciones combinadas */
 
+/* .container img:nth-child(1) {
+  transform: scale(2) rotate(50deg);
+} */
 
 /* Modificando el origen de la rotación */
 
+/* .container img:nth-child(2) {
+  transform: rotate(45deg);
+  transform-origin: top-right;
+} */
