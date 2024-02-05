@@ -170,31 +170,20 @@ body {
 }
 
 .navbar {
-	justify-content: space-between;
+	grid-template-columns: [col-start] 1fr [col-end] 1fr;
 }
 
 .navbar nav {
 	align-items: flex-end;
 }
 
-.content .item {
+.content {
 	display: grid;
-	align-items: center;
-	justify-content: center;
-	flex: 1;
 	background: #ccc;
-	height: 350px;
-	padding: 20px;
+	grid-template-columns: [cont-col-start]1fr[cont-col-mid-start]1fr[cont-col-end]1fr;
+	grid-template-rows: [cont-rows-start]1fr[cont-rows-mid]1fr[cont-rows-mid-end]1fr[cont-rows-end]1fr;
 }
 
-.content .about .item.title,
-.content .portfolio .item.title {
-	justify-content: flex-start;
-}
-
-.content .creation .item.title {
-	justify-content: flex-end;
-}
 
 /* -------- 2. GENERIC ITEMS -------- */
 .navbar {
@@ -292,9 +281,6 @@ body {
 
 .creation .description {
 	background: #f2f2f2;
-	display: grid;
-	flex-flow: column nowrap;
-	align-items: flex-start;
 }
 
 .creation .title {
@@ -309,10 +295,6 @@ body {
 .portfolio .description {
 	background: #f2f2f2;
 	border: 20px solid #fff;
-	display: grid;
-	flex-flow: column nowrap;
-	align-items: flex-start;
-	flex: 1 65.7%;
 }
 
 .portfolio .title {
@@ -347,6 +329,11 @@ body {
 }
 .h1class{
 	order: 0;
+}
+
+.item{
+	height: 350px;
+	padding: 20px;
 }
 
 /* -------- 3. LIST -------- */
